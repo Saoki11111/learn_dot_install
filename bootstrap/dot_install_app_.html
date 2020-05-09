@@ -73,6 +73,24 @@
           </table>
         </div>
       </section>
+
+      <section class="py-5">
+        <h2 class="mb-5 text-center">How to use</h2>
+        <div class="container">
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#ios" class="nav-link active" data-toggle="tab">iOS</a></li>
+            <li class="nav-item"><a href="#android" class="nav-link" data-toggle="tab">Android</a></li>
+          </ul>
+          <div class="tab-content py-4">
+            <div id="ios" class="tab-pane active">
+              <p>Hello iOS. Hello iOS. <span class="font-weight-bold text-info" data-toggle="tooltip" title="This is awesome" data-placement="bottom">Hello iOS. Hello iOS. Hello iOS.</span> Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS. </p>
+            </div>
+            <div id="android" class="tab-pane">
+              <p>Hello Android. Hello Android. Hello Android. Hello Android. Hello Android. Hello Android. Hello Android. Hello Android. Hello Android. Hello Android. Hello Android. </p>
+            </div>
+          <div>
+        </div>
+      </section>
     </main>
     <footer>
     </footer>
@@ -83,5 +101,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      'use strict';
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
   </body>
 </html>
