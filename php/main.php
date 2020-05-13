@@ -1,12 +1,20 @@
 <?php
 
-// $name = 'taguchi';
-$name = 'dotinstall';
+$name = 'taguchi';
 
-// echo 'Hello taguchi' . PHP_EOL;
-// echo 'Hi taguchi' . PHP_EOL;
+// $text = <<< 'EOT' // nowdoc
+// 変数を展開する → <<<EOT とする('')をはずす // heredoc
+// 字下げも出来る
 
-echo "Hello $name \" $name \" . \t $name" . PHP_EOL;
-echo 'Hi $name \"$name\"' . $name . PHP_EOL;
+$text = <<<EOT
+hello! $name
+  this is looooong
+text!
 
-/* ?> は HTML を書かないので不要 */
+EOT;
+
+echo $text;
+
+// here ドキュメント
+// EOT(End OF Document
+// 終端記号(EOT)の前には改行が必要
