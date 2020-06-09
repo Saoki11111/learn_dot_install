@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+      /*.box{
+        text-align: center;
+      }*/
+      .box-container {
+        width: 100px;
+        height: 100px;
+        background: #ddd;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      [p|m][location]-[size]
+      p|m:
+      padding, margin
+
+      location:
+      - t, b, l, r
+        - 上下左右
+      - x,y
+        - 左右
+      size:
+      - 0
+      - 1: 0.25rem
+      - 2: 0.5rem
+      - 3: 1.0rem
+      - 4: 1.5rem
+      - 5: 3.0rem
+      - auto
+    -->
+    <div class="container">
+      <div class="row">
+        <div class="col-10 bg-primary">1</div>
+        <div class="col-2 bg-secondary">2</div>
+      </div>
+      <div class="row ">
+        <div class="col-10 col-md-2 bg-primary">1</div>
+        <div class="col-2 d-md-none bg-secondary">2</div>
+      </div>
+      <div class="row">
+        <div class="col-10 bg-primary">1</div>
+        <div class="d-none d-md-block col-md-2 bg-secondary">2</div>
+      </div>
+    </div>
+
+    <div class="box-container">
+      <div class="bg-primary w-25 h-50 pt-3">BOX</div>
+    </div>
+
+    <div class="box-container">
+      <div class="bg-success w-75 h-100 my-0 mx-auto">BOX</div>
+    </div>
+    <button class="btn btn-primary">OK</button>
+    <button class="btn btn-primary btn-sm">OK</button>
+    <button class="btn btn-primary btn-lg">OK</button>
+    <!--<h1 class="box">BOX</h1>-->
+    <h2 class="font-weight-nomal display-4">Hello Bootstrap</h2>
+    <h1 class="text-center bg-primary">BOX</h1>
+    <h1 class="text-right bg-success text-warning">BOX</h1>
+    <h1 class="text-center bg-info font-weight-bold">BOX</h1>
+    <h1 class="text-center bg-dark text-light">BOX</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
